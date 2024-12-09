@@ -1,0 +1,29 @@
+{
+    "name": "ssr-preact-htm",
+    "version": "1.0.0",
+    "type": "module",
+    "exports": {
+        "./src/entry.client": "./src/entry.client.ff8dc511.final.js"
+    },
+    "buildFiles": [
+        "importmap.js",
+        "src/entry.client.ff8dc511.final.js",
+        "src/entry.client.6a268465.final.css",
+        "importmap.58ec166a7f0f.final.js"
+    ],
+    "importmapJs": "importmap.58ec166a7f0f.final.js",
+    "chunks": {
+        "ssr-preact-htm@src/entry.client.ts": {
+            "js": "./src/entry.client.ff8dc511.final.js",
+            "css": [
+                "./src/entry.client.6a268465.final.css"
+            ],
+            "resources": [],
+            "sizes": {
+                "js": 14607,
+                "css": 39,
+                "resource": 0
+            }
+        }
+    }
+}
