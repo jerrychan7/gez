@@ -162,10 +162,10 @@ export async function fetchPkgsWithProgress({
         multiBar.update(); // force redraw
     };
     const bars: { [url: string]: SingleBar } = urls.reduce(
-        (obj, url) => ({
-            ...obj,
-            [url]: multiBar.create(1, 0, { url })
-        }),
+        (obj, url) =>
+            Object.assign(obj, {
+                [url]: multiBar.create(1, 0, { url })
+            }),
         {}
     );
     // 不知为何，有的时候不会更新，强制每秒重绘一次
